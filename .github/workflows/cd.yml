@@ -24,9 +24,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: delivery
     steps:
-      -uses: actions/download-artifact@v4
+      - name: Download artifact
+        uses: actions/download-artifact@v4
         with:
           name: project
+
       - name: Display structure of downloaded files
-      run: ls -R
-    
+        run: ls -R
