@@ -19,3 +19,14 @@ jobs:
             main.py
             requirements.txt
             README.md
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: delivery
+    steps:
+      -uses: actions/download-artifact@v4
+        with:
+          name: project
+      - name: Display structure of downloaded files
+      run: ls -R
+    
