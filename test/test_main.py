@@ -13,7 +13,7 @@ def test_home():
 
     assert response.status_code == 200
     assert response.json() == {
-        "message": "Hello World! Welcome to the Task Manager API. keep adding tasks to your list and manage them easily."
+    "message": "Hello World! Welcome to the Task Manager API."
     }
 
 
