@@ -6,7 +6,7 @@ tasks = []
 
 @app.get("/")
 def home():
-    return {"message": "Hello World! Welcome to the Task Manager API. keep adding tasks to your list and manage them easily."}
+    return {"message": "Hello World! Welcome to the Task Manager API."}
 
 @app.get("/tasks")
 def get_tasks():
