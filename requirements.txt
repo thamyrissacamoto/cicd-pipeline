@@ -1,1 +1,5 @@
 fastapi[standard]>=0.111.0
+pytest
+pytest-cov
+httpx
+pylint
